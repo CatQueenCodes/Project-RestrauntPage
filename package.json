@@ -1,0 +1,26 @@
+{
+  "name": "project-restrauntpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatQueenCodes/Project-RestrauntPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CatQueenCodes/Project-RestrauntPage/issues"
+  },
+  "homepage": "https://github.com/CatQueenCodes/Project-RestrauntPage#readme",
+  "devDependencies": {
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "tabsy-css": "^1.0.0"
+  }
+}
