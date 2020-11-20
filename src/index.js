@@ -1,14 +1,7 @@
 import "./style.css"
-import {loadHome} from './home';
-import {loadContact} from './contact';
-import {loadMenu} from './menu';
-import {loadAbout} from './about';
+import {renderMainPage} from './home'
 
-
-loadHome();
-loadContact();
-loadMenu();
-loadAbout();
+renderMainPage();
 
 console.log('index.js is linked');
 
