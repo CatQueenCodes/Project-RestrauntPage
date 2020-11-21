@@ -1,11 +1,9 @@
 
 
-
-// add head, pic, button container, content container
-
-const mainFeatures = () => {
+const renderMainPage = () => {
     const container = document.getElementById('content');
-    
+    const btnContainer = document.createElement('div');
+
     function addH1(){
         const head = document.createElement('h1');
         head.textContent = "Cat Queen's Cafe";
@@ -17,27 +15,21 @@ const mainFeatures = () => {
         container.appendChild(photo);
     }
     function addButtonContainer() {
-        const btnContainer = document.createElement('div');
-        btnContainer.classList.add('btn-container');
-        btnContainer.setAttribute('id', 'btnCont')
+        
+        btnContainer.setAttribute('id', 'btnContainer')
         btnContainer.textContent='button container';
         container.appendChild(btnContainer);
     }
     function addContentContainer() {
         const contentContainer = document.createElement('div');
-        contentContainer.classList.add('cont-container')
+        contentContainer.setAttribute('id', 'contContainer')
         contentContainer.textContent = "SAMPLE CONTENT";
         container.appendChild(contentContainer);
     }
-    addH1(); addPhoto(); addButtonContainer(); addContentContainer();
-};
 
-
-//creates 3 buttons
-const createButtons = () => {
-    const btnContainer = document.querySelector('.btn-container')
     function addAboutButton() {
         const aboutButton = document.createElement('button');
+    
         aboutButton.textContent = 'About';
         btnContainer.appendChild(aboutButton);
     }
@@ -51,12 +43,11 @@ const createButtons = () => {
         contactButton.textContent = 'Contact';
         btnContainer.appendChild(contactButton);
     }
+    addH1(); addPhoto(); addButtonContainer(); addContentContainer();
+
     addAboutButton(); addContactButton(); addMenuButton();
 };
 
-function renderMainPage(){
-    mainFeatures();
-    createButtons()
-}
+
 
 export {renderMainPage}

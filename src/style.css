@@ -9,14 +9,14 @@ h1{
     font-family: cursive;
 }
 
-.btn-container {
+#btnContainer {
     background-color: rgb(203, 255, 196);
     height: 50px;
     width: 400px;
     border: 2px solid black;
 }
 
-.cont-container {
+#contContainer {
     background-color: rebeccapurple ;
     height: 500px;
     width: 400px;
