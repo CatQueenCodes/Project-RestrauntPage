@@ -9,12 +9,21 @@ renderMainPage();
 
 // add event listeners 
 
+function tabEventListener() {
+    const menuTab = document.getElementById('menuButton');
+    menuTab.addEventListener('click', loadMenu);
+   
+    const aboutTab = document.getElementById('aboutButton');
+    aboutTab.addEventListener('click', loadAbout);
+   
+    const contactTab = document.getElementById('contactButton');
+    contactTab.addEventListener('click', loadContact);
+}
+
+tabEventListener()
 
 
-//add to buttons
-loadAbout();
-loadMenu();
-loadContact();
+
 
 console.log('index.js is linked');
 

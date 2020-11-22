@@ -29,17 +29,22 @@ const renderMainPage = () => {
 
     function addAboutButton() {
         const aboutButton = document.createElement('button');
-    
+        aboutButton.setAttribute('id', 'aboutButton');
+        aboutButton.className = 'button';
         aboutButton.textContent = 'About';
         btnContainer.appendChild(aboutButton);
     }
     function addMenuButton() {
         const menuButton = document.createElement('button');
+        menuButton.setAttribute('id', 'menuButton');
+        menuButton.className = 'button';
         menuButton.textContent = 'Menu';
         btnContainer.appendChild(menuButton);
     }
     function addContactButton(){
         const contactButton = document.createElement('button');
+        contactButton.setAttribute('id', 'contactButton');
+        contactButton.className = 'button';
         contactButton.textContent = 'Contact';
         btnContainer.appendChild(contactButton);
     }

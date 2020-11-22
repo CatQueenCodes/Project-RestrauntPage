@@ -17,7 +17,7 @@ h1{
 }
 
 #contContainer {
-    background-color: rebeccapurple ;
+    background-color: rgb(204, 169, 240) ;
     height: 500px;
     width: 400px;
     border: 2px solid black;
