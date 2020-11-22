@@ -1,5 +1,5 @@
 function loadContact() {
-    const contentContainer = document.querySelector('#contContaier');
+    const contentContainer = document.querySelector('#contContainer');
     contentContainer.textContent = 'contact button content';
     console.log('contact.js is linked');
 }

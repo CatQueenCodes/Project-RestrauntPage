@@ -6,6 +6,11 @@ import {loadContact} from './contact'
 
 renderMainPage();
 
+
+// add event listeners 
+
+
+
 //add to buttons
 loadAbout();
 loadMenu();
