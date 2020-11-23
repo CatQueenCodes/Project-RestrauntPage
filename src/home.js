@@ -20,37 +20,21 @@ const renderMainPage = () => {
         container.appendChild(contentContainer);
     }
 
-    function addAboutButton() {
-        const aboutButton = document.createElement('button');
-        aboutButton.setAttribute('id', 'aboutButton');
-        aboutButton.className = 'button';
-        aboutButton.textContent = 'About';
-        btnContainer.appendChild(aboutButton);
-    }
-    function addMenuButton() {
-        const menuButton = document.createElement('button');
-        menuButton.setAttribute('id', 'menuButton');
-        menuButton.className = 'button';
-        menuButton.textContent = 'Menu';
-        btnContainer.appendChild(menuButton);
-    }
-    function addContactButton(){
-        const contactButton = document.createElement('button');
-        contactButton.setAttribute('id', 'contactButton');
-        contactButton.className = 'button';
-        contactButton.textContent = 'Contact';
-        btnContainer.appendChild(contactButton);
-    }
     addH1();addButtonContainer(); addContentContainer();
-    addAboutButton(); addContactButton(); addMenuButton();
+
+    ['About', 'Menu', 'Contact'].forEach(btn => createButton(btn));
 };
 
+//DRY for button creation
+function createButton(name){
+    const button = document.createElement('button');
+    button.setAttribute('id', name.toLowerCase() + 'Button');
+    button.className = 'button';
+    button.textContent = name;
+    btnContainer.appendChild(button);
+}
 
-
-
-
-
-//DRY for MENU and CONTACT lists. 
+//DRY for MENU and CONTACT page lists. 
 function createList(title, item1, item2, item3) {
     const contentContainer = document.querySelector('#contContainer');
     contentContainer.textContent = title;
@@ -72,5 +56,5 @@ function createList(title, item1, item2, item3) {
     console.log(title + 'is linked');
 }
 
-
 export {renderMainPage, createList}
+
