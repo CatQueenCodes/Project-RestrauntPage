@@ -1,5 +1,8 @@
 function loadMenu() {
     const contentContainer = document.querySelector('#contContainer');
+
+    contentContainer.textContent = 'Our Menu: Cat Approved';
+
     const list = document.createElement('UL');
     const li1 = document.createElement('LI');
     li1.textContent = 'Cat Nip';
@@ -16,7 +19,4 @@ function loadMenu() {
     contentContainer.appendChild(list);
     console.log('menu.js is linked');
 }
-/*
-Wet food, Dry food, Cat treats. 
-*/
 export {loadMenu}
