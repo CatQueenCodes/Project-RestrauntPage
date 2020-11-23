@@ -1,15 +1,14 @@
 import "./style.css"
 import {renderMainPage} from './home'
 import {loadAbout} from './about'
-import {loadMenu, test} from './menu'
+import {loadMenu} from './menu'
 import {loadContact} from './contact'
 
 
 renderMainPage();
 loadAbout();
-test;
-// add event listeners 
 
+// add event listeners 
 function tabEventListener() {
     const menuTab = document.getElementById('menuButton');
     menuTab.addEventListener('click', loadMenu);
@@ -20,11 +19,7 @@ function tabEventListener() {
     const contactTab = document.getElementById('contactButton');
     contactTab.addEventListener('click', loadContact);
 }
-
-tabEventListener();
-
-
-
+ tabEventListener();
 
 console.log('index.js is linked');
 

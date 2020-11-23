@@ -1,5 +1,4 @@
-
-
+//Add main page elements
 const renderMainPage = () => {
     const container = document.getElementById('content');
     const btnContainer = document.createElement('div');
@@ -21,7 +20,6 @@ const renderMainPage = () => {
     }
 
     addH1();addButtonContainer(); addContentContainer();
-
     ['About', 'Menu', 'Contact'].forEach(btn => createButton(btn));
 };
 
