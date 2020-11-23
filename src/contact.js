@@ -1,6 +1,6 @@
 function loadContact() {
     const contentContainer = document.querySelector('#contContainer');
-    contentContainer.textContent = 'Here are the ways you cant get in contact';
+    contentContainer.textContent = 'Contact me at:';
     const list = document.createElement('UL');
     const li1 = document.createElement('LI');
     li1.textContent = 'GitHub: https://github.com/CatQueenCodes';
