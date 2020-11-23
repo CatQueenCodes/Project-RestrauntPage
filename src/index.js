@@ -4,6 +4,7 @@ import {loadAbout} from './about'
 import {loadMenu} from './menu'
 import {loadContact} from './contact'
 
+
 renderMainPage();
 loadAbout();
 
@@ -21,7 +22,7 @@ function tabEventListener() {
     contactTab.addEventListener('click', loadContact);
 }
 
-tabEventListener()
+tabEventListener();
 
 
 

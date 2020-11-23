@@ -1,3 +1,5 @@
+
+
 function loadContact() {
     const contentContainer = document.querySelector('#contContainer');
     contentContainer.textContent = 'Contact me at:';
