@@ -42,32 +42,35 @@ const renderMainPage = () => {
         btnContainer.appendChild(contactButton);
     }
     addH1();addButtonContainer(); addContentContainer();
-
     addAboutButton(); addContactButton(); addMenuButton();
 };
 
 
-/* DRY for contact and menu 
 
-function loadContact() {
+
+
+
+//DRY for MENU and CONTACT lists. 
+function createList(title, item1, item2, item3) {
     const contentContainer = document.querySelector('#contContainer');
-    contentContainer.textContent = 'Contact me at:';
+    contentContainer.textContent = title;
     const list = document.createElement('UL');
+
     const li1 = document.createElement('LI');
-    li1.textContent = 'GitHub: https://github.com/CatQueenCodes';
+    li1.textContent = item1;
 
     const li2 = document.createElement('LI');
-    li2.textContent = 'Discord: Cat Queen#7475 ';
+    li2.textContent = item2;
 
     const li3 = document.createElement('LI');
-    li3.textContent = '1-800-meowww';
+    li3.textContent = item3;
 
     list.appendChild(li1);
     list.appendChild(li2);
     list.appendChild(li3);
     contentContainer.appendChild(list);
-    console.log('contact.js is linked');
+    console.log(title + 'is linked');
 }
-*/
 
-export {renderMainPage}
+
+export {renderMainPage, createList}

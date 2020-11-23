@@ -1,3 +1,13 @@
+import {createList} from './home'
+
+function loadMenu() {
+    createList('Our Menu: Cat Approved','Cat Nip', 'Treats', 'Tuna Fish')
+}
+
+
+export {loadMenu}
+
+/*
 function loadMenu() {
     const contentContainer = document.querySelector('#contContainer');
 
@@ -19,4 +29,4 @@ function loadMenu() {
     contentContainer.appendChild(list);
     console.log('menu.js is linked');
 }
-export {loadMenu}
+*/

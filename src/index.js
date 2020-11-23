@@ -1,14 +1,13 @@
 import "./style.css"
 import {renderMainPage} from './home'
 import {loadAbout} from './about'
-import {loadMenu} from './menu'
+import {loadMenu, test} from './menu'
 import {loadContact} from './contact'
 
 
 renderMainPage();
 loadAbout();
-
-
+test;
 // add event listeners 
 
 function tabEventListener() {

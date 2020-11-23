@@ -1,14 +1,22 @@
 
+import {createList} from './home'
 
+function loadContact(){
+    createList('Contact me at:', 'GitHub: https://github.com/CatQueenCodes', 'Discord: Cat Queen#7475', '1-800-meowww'); 
+} 
+
+export {loadContact}
+
+/*
 function loadContact() {
     const contentContainer = document.querySelector('#contContainer');
-    contentContainer.textContent = 'Contact me at:';
+    contentContainer.textContent = 'Contact me at:!!!!';
     const list = document.createElement('UL');
     const li1 = document.createElement('LI');
     li1.textContent = 'GitHub: https://github.com/CatQueenCodes';
 
     const li2 = document.createElement('LI');
-    li2.textContent = 'Discord: Cat Queen#7475 ';
+    li2.textContent = 'Discord: Cat Queen#7475';
 
     const li3 = document.createElement('LI');
     li3.textContent = '1-800-meowww';
@@ -19,5 +27,4 @@ function loadContact() {
     contentContainer.appendChild(list);
     console.log('contact.js is linked');
 }
-
-export {loadContact}
+*/
