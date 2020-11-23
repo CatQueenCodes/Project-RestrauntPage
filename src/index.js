@@ -5,6 +5,7 @@ import {loadMenu} from './menu'
 import {loadContact} from './contact'
 
 renderMainPage();
+loadAbout();
 
 
 // add event listeners 

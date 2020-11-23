@@ -9,17 +9,15 @@ const renderMainPage = () => {
         head.textContent = "Cat Queen's Cafe";
         container.appendChild(head);
     }
-    function addPhoto() {
+    function addButtonContainer() {
+        btnContainer.setAttribute('id', 'btnContainer')
+        container.appendChild(btnContainer);
+    }
+    /*function addPhoto() {
         const photo = document.createElement('img');
         photo.src = '/src/cat.jpg';
         container.appendChild(photo);
-    }
-    function addButtonContainer() {
-        
-        btnContainer.setAttribute('id', 'btnContainer')
-        btnContainer.textContent='button container';
-        container.appendChild(btnContainer);
-    }
+    }*/
     function addContentContainer() {
         const contentContainer = document.createElement('div');
         contentContainer.setAttribute('id', 'contContainer')
@@ -48,7 +46,7 @@ const renderMainPage = () => {
         contactButton.textContent = 'Contact';
         btnContainer.appendChild(contactButton);
     }
-    addH1(); addPhoto(); addButtonContainer(); addContentContainer();
+    addH1();addButtonContainer(); /*addPhoto();*/  addContentContainer();
 
     addAboutButton(); addContactButton(); addMenuButton();
 };

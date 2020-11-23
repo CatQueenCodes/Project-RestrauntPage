@@ -1,24 +1,69 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     background-color: rgb(142, 192, 207);
 }
 
 h1{
+    display: flex;
+    justify-content: center;
     font-family: cursive;
+    font-size: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#btnContainer {
-    background-color: rgb(203, 255, 196);
-    height: 50px;
-    width: 400px;
-    border: 2px solid black;
+img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 900px;
+    height: 477px;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #contContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: rgb(204, 169, 240) ;
-    height: 500px;
-    width: 400px;
-    border: 2px solid black;
+    height: 600px;
+    width: 900px;
+    border: 5px solid black;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btnContainer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 1000px;
+    padding-bottom: 20px;
+}
+
+/* 3 buttons */
+.button {
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 0ch;
+    background-color: transparent;
+}
+
+button:hover {
+    text-decoration: underline;
 }
