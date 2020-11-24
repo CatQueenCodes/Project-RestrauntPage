@@ -21,6 +21,4 @@ const about = {
 }
 
 
-
-
 export {about}
