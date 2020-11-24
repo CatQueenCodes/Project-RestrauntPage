@@ -3,6 +3,7 @@ body {
 }
 
 h1{
+    background-color: purple;
     display: flex;
     justify-content: center;
     font-family: cursive;
