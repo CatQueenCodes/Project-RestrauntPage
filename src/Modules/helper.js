@@ -19,7 +19,7 @@ function renderPage(page) {
     }
 }
 
-//DRY for button creation
+//button creation
 function createButton(name){
     const button = document.createElement('button');
     button.setAttribute('id', name.toLowerCase() + 'Button');
@@ -28,21 +28,5 @@ function createButton(name){
     btnContainer.appendChild(button);
 }
 
-
 export {createList, renderPage, createButton};
 
-
-/*
-const createList = {
-    render: (location,title, ...arggs) => {
-        location.textContent = title;
-        const list = document.createElement('ul');
-        [...arggs].forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            list.appendChild(li);
-        });
-        location.appendChild(list);
-    }
-} 
-*/

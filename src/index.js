@@ -19,21 +19,3 @@ tabs.forEach(tab => {
     const tabButton = document.getElementById(tab.id);
     tabButton.addEventListener('click', tab.render)
 });
-
-console.log('index.js is linked');
-
-
-
-
-/* pre-Drying
-function tabEventListener() {
-    const menuTab = document.getElementById('menuButton');
-    menuTab.addEventListener('click', loadMenu);
-   
-    const aboutTab = document.getElementById('aboutButton');
-    aboutTab.addEventListener('click', loadAbout);
-   
-    const contactTab = document.getElementById('contactButton');
-    contactTab.addEventListener('click', loadContact);
-}
-*/

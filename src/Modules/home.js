@@ -24,6 +24,5 @@ const renderMainPage = () => {
     ['About', 'Menu', 'Contact'].forEach(btn => createButton(btn));
 };
 
-
 export {renderMainPage}
 

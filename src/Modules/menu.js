@@ -7,7 +7,5 @@ const menu = {
     }
 }
 
-
-
 export {menu}
 
