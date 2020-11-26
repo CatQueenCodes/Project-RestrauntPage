@@ -1,25 +1,15 @@
-
-//DRY for MENU and CONTACT page lists. 
-function createList(title, item1, item2, item3) {
-    const contentContainer = document.querySelector('#contContainer');
-    contentContainer.textContent = title;
-    const list = document.createElement('UL');
-
-    const li1 = document.createElement('LI');
-    li1.textContent = item1;
-
-    const li2 = document.createElement('LI');
-    li2.textContent = item2;
-
-    const li3 = document.createElement('LI');
-    li3.textContent = item3;
-
-    list.appendChild(li1);
-    list.appendChild(li2);
-    list.appendChild(li3);
-    contentContainer.appendChild(list);
-    console.log(title + 'is linked');
+//functin to create list in my menu and contact page
+function createList(location,title, ...arggs) {
+    location.textContent = title;
+    const list = document.createElement('ul');
+    [...arggs].forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        list.appendChild(li);
+    });
+    location.appendChild(list);
 }
+
 
 //Render about/menu/home
 function renderPage(page) {
@@ -32,3 +22,22 @@ function renderPage(page) {
 
 
 export {createList, renderPage};
+
+
+
+
+
+/*
+const createList = {
+    render: (location,title, ...arggs) => {
+        location.textContent = title;
+        const list = document.createElement('ul');
+        [...arggs].forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            list.appendChild(li);
+        });
+        location.appendChild(list);
+    }
+} 
+*/

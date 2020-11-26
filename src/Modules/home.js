@@ -15,7 +15,6 @@ const renderMainPage = () => {
     function addContentContainer() {
         const contentContainer = document.createElement('div');
         contentContainer.setAttribute('id', 'contContainer')
-        contentContainer.textContent = "SAMPLE CONTENT";
         container.appendChild(contentContainer);
     }
 

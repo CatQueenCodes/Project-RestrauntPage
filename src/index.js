@@ -5,8 +5,8 @@ import {menu} from './Modules/menu'
 import {contact} from './Modules/contact'
 import {renderPage} from './Modules/helper'
 
-
 renderMainPage();
+renderPage(about)();
 
 // add event listeners to my tabs/buttons
 const tabs = [
@@ -21,6 +21,8 @@ tabs.forEach(tab => {
 });
 
 console.log('index.js is linked');
+
+
 
 
 /* pre-Drying
