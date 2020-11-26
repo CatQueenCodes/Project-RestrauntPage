@@ -10,7 +10,6 @@ function createList(location,title, ...arggs) {
     location.appendChild(list);
 }
 
-
 //Render about/menu/home
 function renderPage(page) {
     return () => {
@@ -20,11 +19,17 @@ function renderPage(page) {
     }
 }
 
+//DRY for button creation
+function createButton(name){
+    const button = document.createElement('button');
+    button.setAttribute('id', name.toLowerCase() + 'Button');
+    button.className = 'button';
+    button.textContent = name;
+    btnContainer.appendChild(button);
+}
 
-export {createList, renderPage};
 
-
-
+export {createList, renderPage, createButton};
 
 
 /*

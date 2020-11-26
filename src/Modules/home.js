@@ -1,3 +1,5 @@
+import {createButton} from './helper'
+
 //Add main page elements
 const renderMainPage = () => {
     const container = document.getElementById('content');
@@ -22,14 +24,6 @@ const renderMainPage = () => {
     ['About', 'Menu', 'Contact'].forEach(btn => createButton(btn));
 };
 
-//DRY for button creation
-function createButton(name){
-    const button = document.createElement('button');
-    button.setAttribute('id', name.toLowerCase() + 'Button');
-    button.className = 'button';
-    button.textContent = name;
-    btnContainer.appendChild(button);
-}
 
 export {renderMainPage}
 

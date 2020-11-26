@@ -3,7 +3,6 @@ body {
 }
 
 h1{
-    background-color: rgb(219, 202, 219);
     display: flex;
     justify-content: center;
     font-family: cursive;
